@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>李硕文 · 个人主页</title>
+<meta name="description" content="李硕文的个人主页：关于我、兴趣与喜好、照片墙与联系方式。" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Cdefs%3E%3ClinearGradient%20id='g'%20x1='0'%20y1='0'%20x2='1'%20y2='1'%3E%3Cstop%20offset='0'%20stop-color='%23675cff'/%3E%3Cstop%20offset='1'%20stop-color='%23ff6ea9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle%20cx='50'%20cy='50'%20r='46'%20fill='url(%23g)'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/style.css" />
+<script>
+  (function () {
+    try {
+      var saved = window.localStorage.getItem("lishuowen-theme");
+      if (saved === "dark" || saved === "light") {
+        document.documentElement.setAttribute("data-theme", saved);
+      }
+    } catch (err) {}
+  })();
+</script>
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+<div class="spotlight" aria-hidden="true"></div>
+
+<div class="orbs" aria-hidden="true">
+  <span class="orb orb--a"></span>
+  <span class="orb orb--b"></span>
+  <span class="orb orb--c"></span>
+</div>
+
+<header class="topbar">
+  <a class="topbar__brand" href="#top">李硕文<span class="topbar__brand-tail"><span class="dot">·</span>文文</span></a>
+
+  <nav class="topbar__nav" aria-label="页面导航">
+    <a class="topbar__link" href="#about" data-nav="about">关于</a>
+    <a class="topbar__link" href="#likes" data-nav="likes">喜好</a>
+    <a class="topbar__link" href="#photos" data-nav="photos">照片</a>
+    <a class="topbar__link" href="#contact" data-nav="contact">联系</a>
+  </nav>
+
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换到暗色模式" aria-pressed="false">
+    <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="4.2" />
+      <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
+    </svg>
+    <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M20.4 14.6a8.4 8.4 0 0 1-11-11 8.4 8.4 0 1 0 11 11z" />
+    </svg>
+  </button>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-labelledby="heroName">
+    <div class="hero__text">
+      <p class="hero__kicker reveal" style="--d:.02s">文文 <span class="sep">/</span> Dreamer</p>
+      <h1 class="hero__name reveal" id="heroName" style="--d:.08s">李硕文</h1>
+      <p class="hero__tagline reveal" style="--d:.16s">一个正在经历抑郁但依然前行的14岁孩子</p>
+
+      <div class="hero__tags reveal" style="--d:.2s">
+        <span class="tag">
+          <svg class="tag__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3.4 8.2l4-4 4.6 3.3L16.6 4.2l4 4-4.4 11.4H7.8z" />
+            <path d="M7.8 19.6h8.4" />
+          </svg>
+          IT 小王子
+        </span>
+      </div>
+
+      <div class="hero__actions reveal" style="--d:.26s">
+        <a class="btn btn--primary" href="#about">关于我</a>
+        <a class="btn btn--ghost" href="#photos">照片墙</a>
+      </div>
+    </div>
+
+    <div class="hero__avatar reveal" style="--d:.12s">
+      <div class="avatar-wrap">
+        <span class="avatar-ring" aria-hidden="true"></span>
+        <figure class="avatar">
+          <img src="assets/avatar.jpg" alt="李硕文的头像" width="520" height="520" />
+        </figure>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <section class="section" id="about" aria-labelledby="aboutTitle">
+    <div class="section__head reveal">
+      <p class="section__index">01</p>
+      <h2 class="section__title" id="aboutTitle">关于我</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+
+    <div class="about">
+      <p class="about__line reveal" style="--d:.04s">
+        <span class="about__num">01</span>
+        <span class="about__text">14 岁，正在经历抑郁，也还在继续往前走。</span>
+      </p>
+      <p class="about__line reveal" style="--d:.12s">
+        <span class="about__num">02</span>
+        <span class="about__text">有些日子很难，起床、说话都要用力。但我还是会记下窗外的光、耳机里的歌，和那些没有放弃我的人。</span>
+      </p>
+      <p class="about__line reveal" style="--d:.2s">
+        <span class="about__num">03</span>
+        <span class="about__text">这个页面是我愿意被认识的样子：不完美，不着急，但确实在往前走。</span>
+      </p>
+    </div>
+
+    <blockquote class="quote reveal">
+      <span class="quote__mark" aria-hidden="true">“</span>
+      <p class="quote__label">在意</p>
+      <p class="quote__text">我不在意别人的流言蜚语，我只在意我的爸妈对我的看法。</p>
+    </blockquote>
+  </section>
+
+  <section class="section" id="likes" aria-labelledby="likesTitle">
+    <div class="section__head reveal">
+      <p class="section__index">02</p>
+      <h2 class="section__title" id="likesTitle">兴趣与喜好</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+
+    <div class="likes">
+      <article class="like reveal" style="--d:.02s">
+        <div class="like__head">
+          <span class="like__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9.2 17.4V5.4l9-1.8v11.6" />
+              <circle cx="6.7" cy="17.7" r="2.5" />
+              <circle cx="15.7" cy="15.3" r="2.5" />
+            </svg>
+          </span>
+          <h3 class="like__title">音乐</h3>
+        </div>
+        <ul class="like__list">
+          <li class="like__item">周杰伦《花海》</li>
+          <li class="like__item">洛天依《勾指起誓》</li>
+        </ul>
+      </article>
+
+      <article class="like reveal" style="--d:.08s">
+        <div class="like__head">
+          <span class="like__icon like__icon--book" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4.2 5.3A2.3 2.3 0 0 1 6.5 3H20v15.4H6.6a2.4 2.4 0 0 0-2.4 2.4z" />
+              <path d="M8.6 7.6h7.2M8.6 11.2h4.6" />
+            </svg>
+          </span>
+          <h3 class="like__title">书</h3>
+        </div>
+        <ul class="like__list">
+          <li class="like__item">《乔布斯传》</li>
+        </ul>
+      </article>
+
+      <article class="like reveal" style="--d:.14s">
+        <div class="like__head">
+          <span class="like__icon like__icon--anime" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="7.6" width="18" height="12.6" rx="3.2" />
+              <path d="m8.4 3.2 3.6 4.4 3.6-4.4" />
+              <path d="M9.4 13.9h.01M14.6 13.9h.01" stroke-width="2.4" />
+            </svg>
+          </span>
+          <h3 class="like__title">动漫</h3>
+        </div>
+        <ul class="like__list">
+          <li class="like__item">《名侦探柯南》</li>
+          <li class="like__item">《蜡笔小新》</li>
+          <li class="like__item">《哆啦A梦》</li>
+        </ul>
+      </article>
+
+      <article class="like like--wide reveal" style="--d:.2s">
+        <div class="like__head">
+          <span class="like__icon like__icon--brand" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12.9 3.4H20v7.1l-8.7 8.7a2.1 2.1 0 0 1-3 0L3.8 15a2.1 2.1 0 0 1 0-3z" />
+              <circle cx="16.5" cy="7.5" r="1.3" />
+            </svg>
+          </span>
+          <h3 class="like__title">品牌阵营</h3>
+        </div>
+        <ul class="like__list like__list--inline">
+          <li class="like__item">Apple Fans / 果粉</li>
+          <li class="like__item">米粉 / Mi Fans</li>
+        </ul>
+      </article>
+
+      <article class="like like--wide reveal" style="--d:.26s">
+        <div class="like__head">
+          <span class="like__icon like__icon--season" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2.8v18.4M4.3 7.4l15.4 9.2M19.7 7.4 4.3 16.6" />
+              <path d="m12 6.5-2.3-2M12 6.5l2.3-2M12 17.5l-2.3 2M12 17.5l2.3 2" />
+            </svg>
+          </span>
+          <h3 class="like__title">喜欢的季节</h3>
+        </div>
+        <ul class="like__list like__list--inline">
+          <li class="like__item like__item--accent">冬天</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--photos" id="photos" aria-labelledby="photosTitle">
+    <div class="section__head reveal">
+      <p class="section__index">03</p>
+      <h2 class="section__title" id="photosTitle">照片墙</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+
+    <div class="wall reveal">
+      <div class="wall__track" id="wallTrack" tabindex="0" role="group" aria-label="日常照片，可横向滑动，点击查看大图">
+        <button class="shot" type="button" data-index="0" aria-label="查看第 1 张照片">
+          <img src="assets/photos/photo-01.jpg" alt="李硕文的日常照片 1" width="1080" height="1080" loading="lazy" decoding="async" />
+          <span class="shot__num" aria-hidden="true">01</span>
+        </button>
+        <button class="shot" type="button" data-index="1" aria-label="查看第 2 张照片">
+          <img src="assets/photos/photo-02.jpg" alt="李硕文的日常照片 2" width="675" height="1200" loading="lazy" decoding="async" />
+          <span class="shot__num" aria-hidden="true">02</span>
+        </button>
+        <button class="shot" type="button" data-index="2" aria-label="查看第 3 张照片">
+          <img src="assets/photos/photo-03.jpg" alt="李硕文的日常照片 3" width="613" height="1199" loading="lazy" decoding="async" />
+          <span class="shot__num" aria-hidden="true">03</span>
+        </button>
+        <button class="shot" type="button" data-index="3" aria-label="查看第 4 张照片">
+          <img src="assets/photos/photo-04.jpg" alt="李硕文的日常照片 4" width="827" height="1199" loading="lazy" decoding="async" />
+          <span class="shot__num" aria-hidden="true">04</span>
+        </button>
+        <button class="shot" type="button" data-index="4" aria-label="查看第 5 张照片">
+          <img src="assets/photos/photo-05.jpg" alt="李硕文的日常照片 5" width="675" height="1200" loading="lazy" decoding="async" />
+          <span class="shot__num" aria-hidden="true">05</span>
+        </button>
+        <button class="shot" type="button" data-index="5" aria-label="查看第 6 张照片">
+          <img src="assets/photos/photo-06.jpg" alt="李硕文的日常照片 6" width="675" height="1200" loading="lazy" decoding="async" />
+          <span class="shot__num" aria-hidden="true">06</span>
+        </button>
+      </div>
+      <p class="wall__hint"><span class="wall__dot" aria-hidden="true"></span>左右滑动查看 · 点击任意一张放大</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contactTitle">
+    <div class="section__head reveal">
+      <p class="section__index">04</p>
+      <h2 class="section__title" id="contactTitle">联系方式</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+
+    <div class="cards">
+      <a class="card reveal" href="mailto:3199704668@qq.com" style="--d:.04s">
+        <span class="card__top">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="5" width="18" height="14" rx="3.2" />
+              <path d="m4.5 7.5 7.5 5.6 7.5-5.6" />
+            </svg>
+          </span>
+          <span class="card__label">邮箱</span>
+        </span>
+        <span class="card__value">3199704668@qq.com</span>
+        <span class="card__foot">点击发邮件<span class="card__arrow" aria-hidden="true">↗</span></span>
+      </a>
+
+      <a class="card reveal" href="https://github.com/wengu130301" target="_blank" rel="noopener noreferrer" style="--d:.1s">
+        <span class="card__top">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0 1 12 6.84c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.48A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2z" />
+            </svg>
+          </span>
+          <span class="card__label">GitHub</span>
+        </span>
+        <span class="card__value">github.com/wengu130301</span>
+        <span class="card__foot">打开 GitHub<span class="card__arrow" aria-hidden="true">↗</span></span>
+      </a>
+
+      <div class="card card--copy reveal" style="--d:.16s">
+        <span class="card__top">
+          <span class="card__icon card__icon--wechat" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.5 11.7c0 3.2-3.6 5.8-8 5.8-.9 0-1.8-.1-2.6-.4L5.5 19l1.1-3.1c-1.4-1-2.3-2.5-2.3-4.2 0-3.2 3.6-5.8 8.1-5.8s8.1 2.6 8.1 5.8z" />
+              <path d="M8.6 10.6h.01M12 10.6h.01M15.4 10.6h.01" stroke-width="2.2" />
+            </svg>
+          </span>
+          <span class="card__label">微信</span>
+        </span>
+        <span class="card__value">LaswI_Ai</span>
+        <span class="card__foot">
+          <span class="card__note">微信号</span>
+          <button class="copy" type="button" data-copy="LaswI_Ai" data-label="微信号" aria-label="复制微信号 LaswI_Ai">复制</button>
+        </span>
+      </div>
+
+      <div class="card card--copy reveal" style="--d:.22s">
+        <span class="card__top">
+          <span class="card__icon card__icon--douyin" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9.4 17.3V3.6l10-1.9v10.6" />
+              <circle cx="7.1" cy="17.4" r="2.9" />
+              <circle cx="17.1" cy="14.9" r="2.9" />
+            </svg>
+          </span>
+          <span class="card__label">抖音</span>
+        </span>
+        <span class="card__value">LaswI_Developer</span>
+        <span class="card__foot">
+          <span class="card__note">抖音号</span>
+          <button class="copy" type="button" data-copy="LaswI_Developer" data-label="抖音号" aria-label="复制抖音号 LaswI_Developer">复制</button>
+        </span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer__name">李硕文 <span class="dot">·</span> 文文 <span class="dot">·</span> Dreamer</p>
+  <p class="footer__meta">© 2026</p>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="照片查看" hidden>
+  <button class="lightbox__close" id="lightboxClose" type="button" aria-label="关闭（Esc）">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+      <path d="m6 6 12 12M18 6 6 18" />
+    </svg>
+  </button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="上一张（左方向键）">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m14.5 5.5-6.5 6.5 6.5 6.5" />
+    </svg>
+  </button>
+  <figure class="lightbox__figure">
+    <img id="lightboxImg" alt="" />
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="下一张（右方向键）">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m9.5 5.5 6.5 6.5-6.5 6.5" />
+    </svg>
+  </button>
+  <p class="lightbox__count" id="lightboxCount" aria-live="polite">1 / 6</p>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<noscript>
+  <style>
+    .reveal { opacity: 1; transform: none; }
+    .spotlight { display: none; }
+    .lightbox { display: none !important; }
+  </style>
+</noscript>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
